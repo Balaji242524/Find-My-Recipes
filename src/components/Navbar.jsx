@@ -4,13 +4,17 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav>
-      <div id='logo'>
+      <div className='logo'>
+        <div className='nav-content'>
         <img src="/diet.png" alt="logo" width={50} />
-      <h2>Recipe Finder App</h2>
-      </div>
-      <Link to={"/"}>
 
-        Home</Link>
+      <h2>Find My Recipes</h2>
+        </div>
+      <Link  to={"/"}><img className="homelogo" src = 'src/images/home.png'/>
+
+        </Link>
+      </div>
+      
     </nav>
   )
 }

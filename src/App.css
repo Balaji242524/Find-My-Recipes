@@ -10,8 +10,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(236, 236, 236);
-    color: white;
+    background: rgb(45,162,255);
+    background: radial-gradient(circle, rgba(45,162,255,1) 0%, rgba(168,242,199,1) 100%);
+    color: rgb(255, 255, 255);
     font-family: 'Open Sans', sans-serif;
 }
 section {
@@ -65,19 +66,32 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background: rgb(45,162,255);
+    background: radial-gradient(circle, rgba(45,162,255,1) 0%, rgba(168,242,199,1) 100%);
     position: relative;
    color: black;
     padding: 10px 20px;
     font-size: 20px;
 }
 
-#logo{
+.nav-content{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
-#logo h2{
+.homelogo{
+    width: 50px;
+    height: 50px;
+
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo h2{
     font-size: 20px;
 }
 footer p{
@@ -86,7 +100,7 @@ footer p{
     text-align: center;
 }
 footer a{
-    color: white;
+    color: rgb(123, 225, 240);
 }
 @media (max-width:768px) {
     #logo img{
